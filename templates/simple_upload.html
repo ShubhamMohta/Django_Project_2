@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="simple_upload" method="post">
+    {% csrf_token %}
+<input type="file" id="excelfile" />
+   <input type="button" id="viewfile" value="Export To Table" onclick="ExportToTable()" />
+      <br />
+      <br />
+   <table id="exceltable">
+</table>
+</form>
+</body>
+</html>
